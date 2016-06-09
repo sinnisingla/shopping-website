@@ -1,0 +1,4 @@
+customer/Customer.class
+product/Product.class
+product/ProductDao.class
+customer/CustomerDao.class
