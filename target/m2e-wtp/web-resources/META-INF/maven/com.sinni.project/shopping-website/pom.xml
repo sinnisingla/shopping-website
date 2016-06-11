@@ -25,12 +25,18 @@
 		<scope>test</scope>
 	</dependency>
    
-   
     <!--  jersey  -->
     <dependency>
 			<groupId>com.sun.jersey</groupId>
 			<artifactId>jersey-server</artifactId>
 			<version>1.8</version>
 	</dependency>
-		</dependencies>
+	
+	<!-- hibernate -->
+	<dependency>
+    	<groupId>org.hibernate</groupId>
+    	<artifactId>hibernate-entitymanager</artifactId>
+   	 	<version>5.1.0.Final</version>
+	</dependency>
+</dependencies>
 </project>

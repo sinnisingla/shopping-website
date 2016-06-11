@@ -1,5 +1,6 @@
-package customer;
+package model;
 
+@Entity
 public class Customer {
 	String name;
 	int contact;
