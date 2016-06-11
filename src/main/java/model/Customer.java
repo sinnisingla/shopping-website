@@ -1,24 +1,40 @@
 package model;
 
 import org.hibernate.annotations.Entity;
+import org.hibernate.annotations.Table;
 
-
+@Entity
+@Table(appliesTo="customer")
 public class Customer {
-	String name;
-	int contact;
-	String address;
-	String city; 
-	String email;
+	
+	private int id;
+	private String name;
+	private String contact;
+	private String address;
+	private String city; 
+	private String email;
+	
+	public Customer() {
+		
+	}
+	public Customer(String name, String contact, String address, String city, String email) {
+		super();
+		this.name = name;
+		this.contact = contact;
+		this.address = address;
+		this.city = city;
+		this.email = email;
+	}
 	public String getName() {
 		return name;
 	}
 	public void setName(String name) {
 		this.name = name;
 	}
-	public int getContact() {
+	public String getContact() {
 		return contact;
 	}
-	public void setContact(int contact) {
+	public void setContact(String contact) {
 		this.contact = contact;
 	}
 	public String getAddress() {
