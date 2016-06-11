@@ -55,9 +55,9 @@
    
     <!--  jersey  -->
     <dependency>
-    	<groupId>com.sun.jersey</groupId>
-    	<artifactId>jersey-server</artifactId>
-    	<version>1.19.1</version>
+			<groupId>com.sun.jersey</groupId>
+			<artifactId>jersey-server</artifactId>
+			<version>1.8</version>
 	</dependency>
 
 	<!-- dom4j -->
