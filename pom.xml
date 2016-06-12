@@ -106,6 +106,7 @@
 	    <artifactId>slf4j-api</artifactId>
 	    <version>1.7.21</version>
 	</dependency>
+	<!-- jdbc mysql connector -->
 	<dependency>  
     	<groupId>mysql</groupId>  
     	<artifactId>mysql-connector-java</artifactId>  
