@@ -34,7 +34,6 @@ public class Demo{
         	System.out.println(customer.getAddress());
         }
         session.getTransaction().commit();  
-         System.out.println("hello");
         session.close();  
   
     }  
