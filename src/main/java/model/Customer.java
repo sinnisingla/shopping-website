@@ -1,12 +1,12 @@
 package model;
 
-import org.hibernate.annotations.Entity;
-import org.hibernate.annotations.Table;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.Table;
 
 @Entity
-@Table(appliesTo="customer")
 public class Customer {
-	
+	@Id
 	private int id;
 	private String name;
 	private String contact;

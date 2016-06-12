@@ -12,7 +12,8 @@ public class HibernateUtil {
       
     static {  
         Configuration conf = new Configuration();  
-        conf.configure();  
+        conf.configure();
+//        System.out.println("Hello"+conf.getProperties().getProperty("hibernate.connection.url"));
         serviceRegistry = new ServiceRegistryBuilder().applySettings(conf.getProperties()).buildServiceRegistry();  
         try {  
             sessionFactory = conf.buildSessionFactory(serviceRegistry);  
