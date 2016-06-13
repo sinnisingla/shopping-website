@@ -18,10 +18,10 @@ import model.Customer;
 
 @Path("/hello")
 public class CustomerDao {
-
+	static private String msg1="";
 	@GET
 	@Path("/{param}")
-	public Map<String, Integer> getMsg(@PathParam("param") String msg) {
+	public String getMsg(@PathParam("param") String msg) {
 		SessionFactory sessionFactory = HibernateUtil.getSessionFactory();
 		Session session = sessionFactory.openSession();
 		session.beginTransaction();
@@ -37,7 +37,8 @@ public class CustomerDao {
 		session.close();
 		Map<String, Integer> m = new HashMap<String, Integer>();
 		m.put(msg, 1);
-		return m;
+		msg1=msg1+msg;
+		return msg1;
 
 	}
 
