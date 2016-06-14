@@ -1,0 +1,6 @@
+dao/ProductDao.class
+init/HibernateUtil.class
+demo/Demo.class
+dao/CustomerDao.class
+model/Product.class
+model/Customer.class

@@ -22,19 +22,19 @@ public class CustomerDao {
 	@GET
 	@Path("/{param}")
 	public String getMsg(@PathParam("param") String msg) {
-		SessionFactory sessionFactory = HibernateUtil.getSessionFactory();
-		Session session = sessionFactory.openSession();
-		session.beginTransaction();
-	
-		Query query = session.createQuery("from Customer");
-		List<Customer> list = (List<Customer>) (query).list();
-
-		Iterator iterator = list.iterator();
-		for (Customer customer : list) {
-			System.out.println(customer.getAddress());
-		}
-		session.getTransaction().commit();
-		session.close();
+//		SessionFactory sessionFactory = HibernateUtil.getSessionFactory();
+//		Session session = sessionFactory.openSession();
+//		session.beginTransaction();
+//	
+//		Query query = session.createQuery("from Customer");
+//		List<Customer> list = (List<Customer>) (query).list();
+//
+//		Iterator iterator = list.iterator();
+//		for (Customer customer : list) {
+//			System.out.println(customer.getAddress());
+//		}
+//		session.getTransaction().commit();
+//		session.close();
 		Map<String, Integer> m = new HashMap<String, Integer>();
 		m.put(msg, 1);
 		msg1=msg1+msg;
