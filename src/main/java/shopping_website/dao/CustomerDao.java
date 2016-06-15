@@ -42,6 +42,7 @@ public class CustomerDao implements ApplicationContextAware,BeanNameAware{
 //		}
 		session.getTransaction().commit();
 		session.close();
+		System.out.println(list);
 		return list;
 
 	}
