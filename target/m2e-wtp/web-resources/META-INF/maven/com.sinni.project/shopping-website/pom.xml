@@ -18,6 +18,7 @@
   <properties>
         <jersey2.version>2.19</jersey2.version>
         <jaxrs.version>2.0.1</jaxrs.version>
+        <spring.version>3.0.5.RELEASE</spring.version>
     </properties>
   <dependencies>
  
@@ -159,6 +160,30 @@
 		<groupId>org.glassfish.jersey.media</groupId>
 		<artifactId>jersey-media-moxy</artifactId>
 		<version>2.17</version>
+	</dependency>
+	
+	<!-- Spring annotations 
+	<dependency>
+    	<groupId>org.springframework</groupId>
+    	<artifactId>spring-context</artifactId>
+    	<version>3.0.2.RELEASE</version>
+	</dependency> -->
+	<!-- Spring 3 dependencies -->
+	<dependency>
+		<groupId>org.springframework</groupId>
+		<artifactId>spring-core</artifactId>
+		<version>${spring.version}</version>
+	</dependency>
+	<dependency>
+		<groupId>org.springframework</groupId>
+		<artifactId>spring-context</artifactId>
+		<version>${spring.version}</version>
+	</dependency>
+	
+	<dependency>
+	    <groupId>xml-apis</groupId>
+	    <artifactId>xml-apis</artifactId>
+	    <version>1.4.01</version>
 	</dependency>
 </dependencies>
 </project>

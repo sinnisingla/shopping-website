@@ -11,7 +11,7 @@
         <property name="show_sql">true</property>   
         <property name="connection.pool_size">1</property>  
           
-        <mapping class="model.Customer"></mapping>  
+        <mapping class="shopping_website.model.Customer"></mapping>  
   
     </session-factory>  
 </hibernate-configuration>  

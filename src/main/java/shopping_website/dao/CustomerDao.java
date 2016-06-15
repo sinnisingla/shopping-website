@@ -1,4 +1,4 @@
-package dao;
+package shopping_website.dao;
 
 import java.util.HashMap;
 import java.util.Iterator;
@@ -14,12 +14,19 @@ import javax.ws.rs.core.MediaType;
 import org.hibernate.Query;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
+import org.springframework.beans.BeansException;
+import org.springframework.beans.factory.BeanNameAware;
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.ApplicationContextAware;
+import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Repository;
 
-import init.HibernateUtil;
-import model.Customer;
-
-
-public class CustomerDao {
+import shopping_website.init.HibernateUtil;
+import shopping_website.model.Customer;
+@Repository
+public class CustomerDao implements ApplicationContextAware,BeanNameAware{
+	
+	ApplicationContext context=null; 
 	
 	public List<Customer> getCustomerList() {
 		SessionFactory sessionFactory = HibernateUtil.getSessionFactory();
@@ -37,6 +44,14 @@ public class CustomerDao {
 		session.close();
 		return list;
 
+	}
+	
+	public void setBeanName(String arg0) {
+		System.out.println("Class="+arg0);
+	}
+
+	public void setApplicationContext(ApplicationContext context) throws BeansException {
+		this.context=context;
 	}
 
 }

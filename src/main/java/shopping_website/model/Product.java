@@ -1,4 +1,4 @@
-package model;
+package shopping_website.model;
 
 public class Product {
 	String name;

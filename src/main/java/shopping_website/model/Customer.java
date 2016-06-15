@@ -1,4 +1,4 @@
-package model;
+package shopping_website.model;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;

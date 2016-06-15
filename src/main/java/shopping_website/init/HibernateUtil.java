@@ -1,4 +1,4 @@
-package init;
+package shopping_website.init;
 
 import org.hibernate.SessionFactory;  
 import org.hibernate.cfg.Configuration;  
