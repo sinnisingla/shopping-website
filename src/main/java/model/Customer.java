@@ -3,8 +3,10 @@ package model;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
+import javax.xml.bind.annotation.XmlRootElement;
 
 @Entity
+//@XmlRootElement
 public class Customer {
 	@Id
 	private int id;
